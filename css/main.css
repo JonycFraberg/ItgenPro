@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+
+    background: url("../img/background2.png") ;
+    overflow-x:hidden !important;
+}
+.container{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 96%;
+    margin-left: 2%;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+
+
+
+.header {
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    background:rgba(31, 168, 202,0.60);
+    text-align: center;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-bottom: 20px;
+}
+.headerlogo{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+}
+.header h1{
+    font-size:48px;
+    color: wheat;
+}
+.header img{
+    padding: 0px 50px 0px 50px;
+}
+
+
+nav {
+
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    text-decoration: none;
+    outline: none;
+    display: block;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+.topmenu {
+    text-align: center;
+    padding: 10px 0;
+
+}
+.topmenu > li {
+    display: inline-block;
+    position: relative;
+}
+.topmenu > li:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1px;
+    height: 12px;
+    background: #d2d2d2;
+    top: 16px;
+    box-shadow: 4px -2px 0 #d2d2d2;
+    transform: rotate(30deg);
+}
+.topmenu > li:last-child:after {
+    background: none;
+    box-shadow: none;
+}
+.topmenu > li > a {
+    padding: 12px 26px;
+    color: wheat;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-family: 'Lato', sans-serif;
+}
+.topmenu li a:hover { color: black; }
+.submenu {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 210px;
+    margin-left: -105px;
+    z-index: 5;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(.8);
+    transition: .4s ease-in-out;
+
+}
+.submenu li a {
+    background: rgba(31, 168, 202,1);
+    padding: 10px 0;
+    margin: 10px 10px;
+    border: 1px solid black;
+    border-radius:10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: wheat;
+    font-family: 'Kurale', serif;
+
+}
+.topmenu > li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
+
+
+
+
+
+
+
+.oneblock{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center ;
+    background:rgba(245, 222, 179,0.60);
+    margin-bottom: 20px;
+    border-radius: 15px;
+    justify-content: center;
+}
+@media all  and (max-width: 830px) {
+    .oneblock{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+.oneblock img{
+    display: flex;
+    align-self: center;
+    width:250px;
+    height:250px;
+}
+.oneblock a{
+    font-size:16px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    padding:5px 15px 5px 15px;
+
+}
+.oneblock ol{
+    padding-bottom: 5px;
+}
+.oneblock a:hover{
+    background: rgba(31, 168, 202,1);
+    border:2px solid black;
+    border-radius: 10px;
+    color: wheat;
+}
+.oneblock li{
+    text-align: center;
+    display: none;
+}
+.one1{
+    display: flex;
+    flex-direction:column;
+    background:rgba(245,245,245,0.8);
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    min-height:270px;
+    min-width: 250px;
+    max-width: 250px;
+}
+.one2{
+    display: flex;
+    flex-direction:column;
+    background:rgba(245,245,245,0.8);
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    min-height:270px;
+    min-width: 250px;
+    max-width: 250px;
+}
+.one3{
+    display: flex;
+    flex-direction:column;
+    background:rgba(245,245,245,0.8);
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    min-height:270px;
+    min-width: 250px;
+    max-width: 250px;
+}
+.one4{
+    display: flex;
+    flex-direction:column;
+    background:rgba(245,245,245,0.8);
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    min-height:270px;
+    min-width: 250px;
+    max-width: 250px;
+}
+.one5{
+    display: flex;
+    flex-direction:column;
+    background:rgba(245,245,245,0.8);
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    min-height:270px;
+    min-width: 250px;
+    max-width: 250px;
+}
+.one6{
+    display: flex;
+    flex-direction:column;
+    background:rgba(245,245,245,0.8);
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    min-height:270px;
+    min-width: 250px;
+    max-width: 250px;
+}
+.one7{
+    display: flex;
+    flex-direction:column;
+    background:rgba(245,245,245,0.8);
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    min-height:270px;
+    min-width: 250px;
+    max-width: 250px;
+}
+.one8{
+      display: flex;
+      flex-direction:column;
+      background:rgba(245,245,245,0.8);
+      border: 2px solid black;
+      border-radius: 15px;
+      padding: 10px 10px 10px 10px;
+      margin: 10px 10px 10px 10px;
+      min-height:270px;
+      min-width: 250px;
+      max-width: 250px;
+  }
+.one9{
+    display: flex;
+    flex-direction:column;
+    background:rgba(245,245,245,0.8);
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    min-height:270px;
+    min-width: 250px;
+    max-width: 250px;
+}
+.one10{
+     display: flex;
+     flex-direction:column;
+     background:rgba(245,245,245,0.8);
+     border: 2px solid black;
+     border-radius: 15px;
+     padding: 10px 10px 10px 10px;
+     margin: 10px 10px 10px 10px;
+     min-height:270px;
+     min-width: 250px;
+     max-width: 250px;
+ }
+.one11{
+    display: flex;
+    flex-direction:column;
+    background:rgba(245,245,245,0.8);
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    min-height:270px;
+    min-width: 250px;
+    max-width: 250px;
+}
+.one12{
+    display: flex;
+    flex-direction:column;
+    background:rgba(245,245,245,0.8);
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    min-height:270px;
+    min-width: 250px;
+    max-width: 250px;
+}
+.one1:hover{
+    background:rgba(245,245,245,1);
+    cursor: pointer;
+    transition: 1s linear;
+}
+.one1:hover img{
+     display: none;
+ }
+.one1:hover li{
+    display: inline;
+    font-size: 18px;
+}
+.one2:hover{
+    background:rgba(245,245,245,1);
+    cursor: pointer;
+}
+.one2:hover img{
+    display: none;
+}
+.one2:hover li{
+    display: inline;
+    font-size: 18px;
+}
+.one3:hover{
+    background:rgba(245,245,245,1);
+    cursor: pointer;
+
+}
+.one3:hover img{
+    display: none;
+}
+.one3:hover li{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.one4:hover{
+    background:rgba(245,245,245,1);
+    cursor: pointer;
+    transition: 1s linear;
+}
+.one4:hover img{
+    display: none;
+}
+.one4:hover li{
+    display: inline;
+    font-size: 18px;
+}
+.one5:hover{
+    background:rgba(245,245,245,1);
+    cursor: pointer;
+    transition: 1s linear;
+}
+.one5:hover img{
+    display: none;
+}
+.one5:hover li{
+    display: inline;
+    font-size: 18px;
+}
+.one6:hover{
+    background:rgba(245,245,245,1);
+    cursor: pointer;
+    transition: 1s linear;
+}
+.one6:hover img{
+    display: none;
+}
+.one6:hover li{
+    display: inline;
+    font-size: 18px;
+}
+.one7:hover{
+    background:rgba(245,245,245,1);
+    cursor: pointer;
+    transition: 1s linear;
+}
+.one7:hover img{
+    display: none;
+}
+.one7:hover li{
+    display: inline;
+    font-size: 18px;
+}
+.one8:hover{
+     background:rgba(245,245,245,1);
+     cursor: pointer;
+     transition: 1s linear;
+ }
+.one8:hover img{
+    display: none;
+}
+.one8:hover li{
+    display: inline;
+    font-size: 18px;
+}
+.one9:hover{
+    background:rgba(245,245,245,1);
+    cursor: pointer;
+    transition: 1s linear;
+}
+.one9:hover img{
+    display: none;
+}
+.one9:hover li{
+    display: inline;
+    font-size: 18px;
+}
+.one10:hover{
+    background:rgba(245,245,245,1);
+    cursor: pointer;
+    transition: 1s linear;
+}
+.one10:hover img{
+    display: none;
+}
+.one10:hover li{
+    display: inline;
+    font-size: 18px;
+}
+.one11:hover{
+    background:rgba(245,245,245,1);
+    cursor: pointer;
+    transition: 1s linear;
+}
+.one11:hover img{
+    display: none;
+}
+.one11:hover li{
+    display: inline;
+    font-size: 18px;
+}
+.one12:hover{
+    background:rgba(245,245,245,1);
+    cursor: pointer;
+    transition: 1s linear;
+}
+.one12:hover img{
+    display: none;
+}
+.one12:hover li{
+    display: inline;
+    font-size: 18px;
+}
